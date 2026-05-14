@@ -172,7 +172,10 @@ jQuery UI Sortable 1.10+ (might work with 1.9, but not tested)
 Tested with: Firefox, Chrome  
 **NOTE: This is still an alpha version, please test thoroughly in whichever version of IE you target**
 
+## CI/CD
+
+Pull requests against `main` run three checks: PR title (Conventional Commits), formatting (ESLint), and pack-verify (`nuget pack`). On merge to `main`, the package is published to [GitHub Packages](https://github.com/orgs/equinor/packages). See [CONTRIBUTING.md](CONTRIBUTING.md) for the contribution checklist and version-bumping flow.
+
 ## License
 
-This work is licensed under the MIT License.  
-Which means you can do pretty much whatever you want with it.
+This work is licensed under the MIT License — see [LICENSE](LICENSE).
