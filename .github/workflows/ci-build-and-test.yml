@@ -11,7 +11,7 @@ permissions:
 jobs:
   pack:
     name: Verify NuGet pack
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v5
 
