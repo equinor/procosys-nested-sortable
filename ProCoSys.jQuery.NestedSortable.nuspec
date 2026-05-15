@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+    <metadata>
+        <id>ProCoSys.jQuery.NestedSortable</id>
+        <version>1.0.1</version>
+        <authors>Equinor ProCoSys</authors>
+        <projectUrl>https://github.com/equinor/procosys-nested-sortable</projectUrl>
+        <repository type="git" url="https://github.com/equinor/procosys-nested-sortable.git" />
+        <license type="expression">MIT</license>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <readme>README.md</readme>
+        <description>jQuery plugin extending jQuery UI Sortable to support nested lists. ProCoSys distribution.</description>
+        <tags>jquery sortable nested-sortable procosys</tags>
+        <dependencies>
+            <dependency id="jQuery.UI.Combined" version="1.9.2" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="jquery.mjs.nestedSortable.js" target="content\Scripts\Plugins\jquery.mjs.nestedSortable.js" />
+        <file src="README.md" target="" />
+    </files>
+</package>

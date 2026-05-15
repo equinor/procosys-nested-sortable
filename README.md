@@ -3,9 +3,6 @@
 **nestedSortable** is a jQuery plugin that extends jQuery Sortable UI functionalities to nested lists.  
 *Note: Version 2.0 is published in branch '2.0alpha' and is available for testing. At the moment it has only been tested in Firefox and Chrome, if you work with IE feel free to give it a shot and let me know if something goes wrong.*
 
-## Meteor Installation
-    meteor add ilikenwf:nested-sortable
-
 ## What's new in version 2.0
 
 The biggest change is that your nested list can now behave as a tree with expand/collapse funcionality. Simply set `isTree` to **true** in the options and you are good to go! Check the [demo](http://ilikenwf.github.io/example.html) out to see what can be done with nestedSortable and a little CSS. (Note that all **nestedSortable** does is to assign/remove classes on the fly)  
@@ -172,7 +169,10 @@ jQuery UI Sortable 1.10+ (might work with 1.9, but not tested)
 Tested with: Firefox, Chrome  
 **NOTE: This is still an alpha version, please test thoroughly in whichever version of IE you target**
 
+## CI/CD
+
+Pull requests against `main` run three checks: PR title (Conventional Commits), formatting (ESLint), and pack-verify (`nuget pack`). On merge to `main`, the package is published to [GitHub Packages](https://github.com/orgs/equinor/packages). See [CONTRIBUTING.md](CONTRIBUTING.md) for the contribution checklist and version-bumping flow.
+
 ## License
 
-This work is licensed under the MIT License.  
-Which means you can do pretty much whatever you want with it.
+This work is licensed under the MIT License — see [LICENSE](LICENSE).

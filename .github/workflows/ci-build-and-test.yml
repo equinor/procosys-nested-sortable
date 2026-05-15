@@ -1,0 +1,30 @@
+name: 🤖 Build & verify package
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  pack:
+    name: Verify NuGet pack
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: JS syntax check
+        run: node --check jquery.mjs.nestedSortable.js
+
+      - name: Setup NuGet
+        uses: nuget/setup-nuget@v2
+
+      - name: Pack
+        run: nuget pack ProCoSys.jQuery.NestedSortable.nuspec -OutputDirectory ./nupkg
