@@ -1,7 +1,6 @@
 name: 📦 Publish NuGet package
 
 on:
-  pull_request: # TODO: remove debug
   push:
     branches: [main]
 
