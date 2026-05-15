@@ -22,4 +22,5 @@ jobs:
         run: nuget pack ProCoSys.jQuery.NestedSortable.nuspec -OutputDirectory ./nupkg
 
       - name: Push to GitHub Packages
+        shell: bash
         run: dotnet nuget push ./nupkg/*.nupkg --source https://nuget.pkg.github.com/equinor/index.json --api-key ${{ secrets.GITHUB_TOKEN }} --skip-duplicate
